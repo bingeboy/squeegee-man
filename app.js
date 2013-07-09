@@ -1,5 +1,5 @@
-var prompt = require('prompt');
-
+var prompt = require('prompt')
+    , request = require('request');
 
 // process.argv.forEach(function(val, index, array) {
 //   console.log(index + ': ' + val);
@@ -38,4 +38,11 @@ var prompt = require('prompt');
     var url = "http://maps.googleapis.com/maps/api/directions/json?"+
               "origin="+result.origin+"&destination="+result.destination+"&sensor=false&departure_time=1343605500&mode="+result.transit;
     console.log("url", url);
+
+	request(url, function (error, response, body){ 
+			  if (!error && response.statusCode == 200) {
+				      console.log(body) // log the body
+		      }
+	});
+
   });
