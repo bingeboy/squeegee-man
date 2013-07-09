@@ -4,6 +4,7 @@
   "description": "Directions to and from a location",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "node app.js  --debug"
   },
   "repository": {
@@ -17,5 +18,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bingeboy/squeegee-man/issues"
+  },
+  "devDependencies": {
+    "nodemon": "~0.7.8",
+    "prompt": "~0.2.11"
   }
 }
