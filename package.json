@@ -1,0 +1,21 @@
+{
+  "name": "squeegee-man",
+  "version": "0.0.0",
+  "description": "Directions to and from a location",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js  --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bingeboy/squeegee-man.git"
+  },
+  "keywords": [
+    "directions"
+  ],
+  "author": "Erwan Jegouzo, JP McGarrity",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bingeboy/squeegee-man/issues"
+  }
+}
